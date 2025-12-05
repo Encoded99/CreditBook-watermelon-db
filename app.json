@@ -1,0 +1,92 @@
+{
+  "expo": {
+    "name": "CreditBook",
+    "slug": "creditBook",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "creditbook",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+      "notification": {
+      "icon": "./assets/images/CreditBook.png",
+      "color": "#ffffff",
+      "androidMode": "default",
+      "androidCollapsedTitle": "New Notification"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff",
+        "foregroundImage": "./assets/images/CreditBook-Small.png",
+        "monochromeImage": "./assets/images/CreditBook.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.encoded999.creditBook",
+         "versionCode": 3
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/CreditBook.png"
+    },
+    "plugins": [
+       ["@morrowdigital/watermelondb-expo-plugin"],
+    [
+      "expo-build-properties",
+      {
+        "android": {
+          "kotlinVersion": "1.9.24",
+          "gradleVersion": "8.6",
+          "packagingOptions": {
+            "pickFirst": ["**/libc++_shared.so"]
+          }
+        }
+      }
+    ],
+      
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/CreditBook.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ],
+      "expo-notifications",
+      "expo-secure-store",
+      "expo-sqlite",
+        [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-5043577647064520~4464680578",
+          "iosAppId": "ca-app-pub-5043577647064520~6628519922"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "cd2c83dc-5a46-4727-a468-a9ad7aa4cbb1"
+      }
+    },
+    
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/cd2c83dc-5a46-4727-a468-a9ad7aa4cbb1"
+    }
+  }
+}
